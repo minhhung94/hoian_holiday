@@ -1,44 +1,28 @@
 <?php include '../../template/header.php' ?>
-<?php include '../../template/head/menu.php' ?>
-<div style="">
-        <?php
-        $title_all = $photo;
-//$ma=$_GET['ma'];
-        $page = isset($_GET["page"]) ? intval($_GET["page"]) : 1;
-$rows_per_page = 12; //So luong phan trang
-$page_start = ( $page - 1 ) * $rows_per_page;
-$page_end = $page * $rows_per_page;
-$sql_query = mysql_query("select * from photos where home='1' order by id desc");
-$number_of_page = ceil(mysql_num_rows($sql_query) / $rows_per_page);
-if ($number_of_page > 1) {
-  $list_page = "<td>  </td>";
-  for ($i = 1; $i <= $number_of_page; $i++) {
-    if ($i == $page) {
-      $list_page .= " <td><div style=\"width:15px; height:25px; border:none; padding-top:5px; background-repeat:no-repeat; clear:both\"><font style=\"color:#FF0000; font-size:12pt \">&nbsp<b>$i</b> &nbsp;</font></div></td>";
-    } else {
-      $list_page .= "<td><div style=\"width:25px; height:25px; border:none; padding-top:5px; background-repeat:no-repeat; clear:both\"><a  style=\"color:#000; font-size:12pt \" href='$path3/module/gallery/index.php?lang=$lang&page={$i}&#rs'>&nbsp; {$i}&nbsp; </a></div></td>";
-    }
-  }
-}
-$i = 0;
+<?php include '../../template/head/index.php' ?>
+<div class="container" id="galler">
+	<div class="col-md-9 col-lg-9" style="padding-left: 0px;">
+		<div class="module_about">GALLERY</div>
+        <div style="clear: both; height: 20px;"></div>
+		<?php
+        $sql_page = "SELECT * FROM photos WHERE Home='1' order by id desc";
+        $query_page = mysql_query($sql_page);
+        while ($row_page = mysql_fetch_array($query_page)) {
 
-$i = '0';
-while ($row_photo = mysql_fetch_array($sql_query)) {
-  if ($i >= $page_start) {
+            ?>      
+                    <div class="col-md-3">
+                        <div class="galle_anh">
+                            <a class="example-image-link" href="<?=$path2?>/admin/<?=$row_page['img_url']?>" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="<?=$path2?>/admin/<?=$row_page['img_url']?>" alt="" /></a>
+                        </div>
+                      <div style="height: 20px;"></div>
+                  </div>
 
-    $ma_pro = $row_photo["ma"];
-    $tit_pro = $row_photo['tensp'];
-    $titpro = $row_photo['tensp'];
-    $titpro = stripUnicode($titpro);
-    $titpro = str_replace(" ", "-", "$titpro");
-
-    include("1photo.php");
-  }
-  $i++;
-  if ($i >= $page_end) {
-    break;
-  }
-}
-?>                                      
-<div style="display: table; margin: 0 auto; clear: both;"><table><?= $list_page ?></table></div>
+      <?php
+  } ?>
+      
+    </div>
+	<div class="col-md-3 col-lg-3" style="padding-right: 0px;">
+		<?php include '../menuright.php' ?>
+	</div>
 </div>
+<?php include '../../template/footer/index.php' ?>

@@ -1,3 +1,4 @@
-<?php $ketnoi = mysql_connect("localhost","root","") or die ("khong ket noi duoc du lieu"); 
-mysql_select_db("anbangbeach",$ketnoi);
+<?php
+$connect=mysql_connect("localhost","myhoianc_holiday","Holiday#123") or die("Can not connect database");
+mysql_select_db("myhoianc_holiday",$connect);
 ?>

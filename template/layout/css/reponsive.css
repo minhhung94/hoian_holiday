@@ -1,0 +1,180 @@
+@media only screen and (max-width:768px){
+	.thanhmenu{display: none;}
+	.logo {margin: 0 auto;padding-left: 0px;width: 100%;}
+    .lienhe {text-align: center;}
+	.banner_dt{display: none;}
+	.banner {
+    width: 100%;
+    min-height: 100px;
+    position: relative;}
+    header .banner_dienth{display: block; margin-top: 25px;}
+    header {
+    width: 100%;
+    min-height: 100px;
+}
+.menuhome .menudt {
+	display: block;
+}
+.fb_dt img {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.tp_dt img {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.kc_banner {
+	clear: both;
+	height: 30px;
+}
+.gachdung {
+	display: none;
+}
+	.abvideo {
+    width: 100%;
+	min-height: 0px;
+    background: none;
+}
+.khungvideo {
+    width: 100%;
+	position: relative;
+    margin: 0 auto;
+    min-height: 300px;
+}
+.khungvideo iframe {
+    height: 280px;
+}
+.tour_mt{
+	display: none;
+}
+.tour{
+	min-height: 600px;
+}
+.anhh {
+    padding: 5px;
+    width: 100%;
+    background: #f7faf0;
+    min-height: 450px;
+}
+.anhtour {
+    width: 100%;
+    min-height: 220px;
+}
+.anhtour img {
+    width: 100%;
+    height: 200px;
+}
+.metop{
+	width: 100%;
+}
+.timkiem{
+	display: none;
+}
+.lhright {
+    width: 100%;
+    float: right;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    color: #fff685;
+}
+.tieude {
+	font-size: 20px;
+}
+.content_dt{
+	font-size: 14px;
+}
+.readmore {
+	float: right;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    background: #164502;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#list_phonem {
+	display: block;
+}
+.servces_mt{
+	display: none;
+}
+.servces_dt{
+	display: block;
+}
+.other .servces {
+    padding-top: 50px;
+    width: 100%;
+    min-height: 310px;
+}
+.menudt .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border-color: #e7e7e7;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    background: #164502;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white !important ;
+}
+.tripad {
+    width: 100%;
+    min-height: 470px;
+    margin-top: 20px;
+    background-image: url(../images/tripbg.png);
+}
+.tripadvisor {    margin-top: 0px; margin-left: 0px; }
+.gachcheo {
+    display: none;}
+.discor_border {
+    width: 100%;
+    min-height: 0px;
+    border: 5px solid #ffb600;
+margin-top: 0px;background: #9c7f0fd1;
+}
+.discor_nen {
+   margin: 0 auto;
+    width: 100%;
+    min-height: 160px;
+    background: no-repeat;}
+.footer_text {
+    padding: 10px;}
+    .gach_left {
+        display: none;
+    }
+    .gach_right {
+        display: none;
+    }
+    .modv_dt {
+    width: 100%;
+    height: 120px;
+    background: #3c763da8;
+    bottom: 0;
+    position: absolute;
+    }
+    .modv_detail {
+    width: 120px;
+    min-height: 42px;
+    border-radius: 10px;
+    border: 2px solid #f6ef58;
+    float: right;
+    margin-top: 0px;
+}
+.detai_anhtour {
+    width: 100%;
+    min-height: 250px;
+}
+.detai_anhtour img {
+    width: 100%;
+    height: 250px;
+}
+.anh_promotion img {
+    width: 100%;
+    height: 200px;
+}
+}
+
+.banner_dienth{display: none;}
